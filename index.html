@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game "Rock-Paper-Scissors"</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"></link>
+     <link rel="icon shotcut" href="image/logo.png">
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap"
+      rel="stylesheet"/> </link>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet"></link>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=RocknRoll+One&display=swap" rel="stylesheet"></link>
+  </head>
+  <body>
+    <div id="cover">
+      <p>Bye, bye!</p>
+      <p>Thank you for playing my game!</p>
+      <p> <span>Created by P.S 	&#10084;</span> </p>
+    </div>
+    <h1>Play the game "Rock Paper Scissors"</h1>
+    <div class="cardscore">
+      <p> Your score: <span id="personScore"></span></p>
+      <p>Robot score: <span id="robotScore"></span></p>
+    </div>
+    <div class="maintext">
+        <p id="result">
+        <p class="again" id="palyAgain"></p>
+        <div id="buttonsss">
+          <button type="button" onclick="newGame()">YES</button>
+          <button type="button" onclick="document.getElementById('cover').style.display = 'block';" >NO</button>
+        </div>
+        <p class="title"> <i>Please, choose your weapon!</i> </p>
+      </div>
+        <div class="weapons">
+    <div class="rock"  >
+      <img src="image/rock.png" alt="Rock" id="rockopacity" onclick="rock()">
+    <p id="rockText"></p>
+    </div>
+    <div class="paper">
+      <img src="image/paper.png" alt="Papersheet" id="paperopacity" onclick="paper()">
+      <p id="paperText"></p>
+    </div>
+    <div class="scissors">
+      <img src="image/scissors.png" alt="Scissors" id="scissorsopacity"onclick="scissors()">
+      <p id="scissorsText"></p>
+    </div>
+  </div>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='icon' href="#">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  <link rel="stylesheet" href="style/style.css">
-  <title>Document</title>
-</head>
-
-<body>
-
-  <h1>hello to the world</h1>
-</body>
-
+<h2>Robot choose : </h2>
+<p class="robotText" id="robotChoice"></p>
+    
+    <script src="script.js"></script>
+  </body>
 </html>

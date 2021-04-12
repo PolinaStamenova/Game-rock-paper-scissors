@@ -1,42 +1,143 @@
-/*
-    ==============================================
-                ****** RESET ******
-    ==============================================
-*/
-body {
-  margin: 0;
-}
-
-:root {
-  --color-red: #f42;
-  --bg-color-red: #f42;
-}
-
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  position: relative;
+}
+#cover {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15rem;
+  line-height: 70px;
+  background-color: rgba(0, 0, 0, 0.822);
+  display: none;
+}
+#cover p {
+  color: #fff;
+  font-size: 50px;
+  font-family: "Grand Hotel", cursive;
+  text-align: center;
+}
+#cover span {
+}
+h1 {
+  color: chartreuse;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-family: "New Tegomin", serif;
 }
 
-ul {
-  list-style: none;
+.cardscore {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  color: cornflowerblue;
+  font-size: 30px;
+  font-family: "Indie Flower", cursive;
+}
+.maintext {
+  height: 200px;
+}
+#result {
+  color: fuchsia;
+  font-size: 40px;
+  font-family: "New Tegomin", serif;
+  font-family: "RocknRoll One", sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+.again {
+  margin-top: 1rem;
+  color: darkorange;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  text-align: center;
+  height: 30px;
+}
+#buttonsss {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: 70px;
+  display: none;
+  height: 45px;
+}
+button {
+  background-color: black;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+  width: 80px;
+  height: 40px;
+  border-radius: 1px solid #fff;
+  border-style: dotted;
+  padding: 5px;
+}
+button:hover {
+  width: 84px;
+  height: 44px;
+}
+.title {
+  color: rgb(103, 103, 141);
+  font-size: 30px;
+  margin-left: 2rem;
+  text-align: center;
+}
+.weapons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+.rock img,
+.paper img,
+.scissors img {
+  width: 280px;
 }
 
-a:hover {
-  color: #333;
+#rockText,
+#paperText,
+#scissorsText {
+  color: aliceblue;
+  font-size: 30px;
+  text-align: center;
+  height: 40px;
+}
+h2 {
+  color: rgba(245, 245, 220, 0.671);
+  font-weight: bold;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
 }
 
-/*
-    ==============================================
-                ****** GLOBAL ******
-    ==============================================
-*/
+.robotText {
+  margin-top: 1rem;
+  color: rgb(247, 247, 58);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#rockopacity,
+#paperopacity,
+#scissorsopacity {
+  opacity: 0.5;
+}
+
+.boxshadow {
+  filter: drop-shadow(0 0 3rem white);
+}
