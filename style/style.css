@@ -166,8 +166,18 @@ h2 {
   .again {
     font-size: 30px;
   }
+
+  #buttonsss {
+    gap: 3rem;
+  }
   .title {
     font-size: 20px;
+  }
+  .weapons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
   }
   .rock img,
   .paper img,
