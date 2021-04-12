@@ -2,12 +2,10 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   background-color: #000;
   position: relative;
 }
-
 #cover {
   position: absolute;
   z-index: 999;
@@ -20,7 +18,6 @@ body {
   background-color: rgba(0, 0, 0, 0.822);
   display: none;
 }
-
 #cover p {
   color: #fff;
   font-size: 50px;
@@ -31,15 +28,9 @@ body {
 h1 {
   color: chartreuse;
   margin-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 50px;
   font-family: "New Tegomin", serif;
 }
@@ -51,26 +42,19 @@ h1 {
   font-size: 30px;
   font-family: "Indie Flower", cursive;
 }
-
 .maintext {
   height: 200px;
 }
-
 #result {
   color: fuchsia;
   font-size: 40px;
   font-family: "New Tegomin", serif;
   font-family: "RocknRoll One", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 50px;
   margin-bottom: 1rem;
 }
-
 .again {
   margin-top: 1rem;
   color: darkorange;
@@ -79,21 +63,15 @@ h1 {
   text-align: center;
   height: 30px;
 }
-
 #buttonsss {
   margin-top: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 1rem;
   height: 70px;
   display: none;
   height: 45px;
 }
-
 button {
   background-color: black;
   font-weight: bold;
@@ -106,28 +84,19 @@ button {
   border-style: dotted;
   padding: 5px;
 }
-
 button:hover {
   width: 84px;
   height: 44px;
 }
-
 .title {
-  color: #67678d;
+  color: rgb(103, 103, 141);
   font-size: 30px;
   text-align: center;
 }
-
 .weapons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   gap: 3rem;
 }
 
@@ -145,29 +114,20 @@ button:hover {
   text-align: center;
   height: 40px;
 }
-
 h2 {
   color: rgba(245, 245, 220, 0.671);
   font-weight: bold;
   font-size: 44px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .robotText {
   margin-top: 1rem;
-  color: #f7f73a;
+  color: rgb(247, 247, 58);
   font-size: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 0.2rem;
 }
 
@@ -178,8 +138,7 @@ h2 {
 }
 
 .boxshadow {
-  -webkit-filter: drop-shadow(0 0 3rem white);
-          filter: drop-shadow(0 0 3rem white);
+  filter: drop-shadow(0 0 3rem white);
 }
 
 @media only screen and (min-width: 375px) {
@@ -207,6 +166,7 @@ h2 {
   .again {
     font-size: 30px;
   }
+
   #buttonsss {
     gap: 2rem;
   }
@@ -214,15 +174,9 @@ h2 {
     font-size: 20px;
   }
   .weapons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     gap: 3rem;
   }
   .rock img,
@@ -238,12 +192,11 @@ h2 {
   h2 {
     font-size: 24px;
   }
+
   .robotText {
     font-size: 20px;
   }
   .boxshadow {
-    -webkit-filter: drop-shadow(0 0 0.5rem white);
-            filter: drop-shadow(0 0 0.5rem white);
+    filter: drop-shadow(0 0 0.5rem white);
   }
 }
-/*# sourceMappingURL=style.css.map */
