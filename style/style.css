@@ -24,11 +24,10 @@ body {
   font-family: "Grand Hotel", cursive;
   text-align: center;
 }
-#cover span {
-}
+
 h1 {
   color: chartreuse;
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,7 +91,6 @@ button:hover {
 .title {
   color: rgb(103, 103, 141);
   font-size: 30px;
-  margin-left: 2rem;
   text-align: center;
 }
 .weapons {
@@ -105,7 +103,7 @@ button:hover {
 .rock img,
 .paper img,
 .scissors img {
-  width: 280px;
+  width: 250px;
 }
 
 #rockText,
@@ -119,7 +117,7 @@ button:hover {
 h2 {
   color: rgba(245, 245, 220, 0.671);
   font-weight: bold;
-  font-size: 50px;
+  font-size: 44px;
   display: flex;
   justify-content: center;
 }
@@ -130,6 +128,7 @@ h2 {
   font-size: 30px;
   display: flex;
   justify-content: center;
+  margin-bottom: 0.2rem;
 }
 
 #rockopacity,
@@ -140,4 +139,51 @@ h2 {
 
 .boxshadow {
   filter: drop-shadow(0 0 3rem white);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  h1 {
+    font-size: 16px;
+  }
+  #cover {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 5rem;
+  }
+  .cardscore {
+    margin-left: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+  .maintext {
+    height: 200px;
+  }
+  #result {
+    font-size: 30px;
+    height: 30px;
+  }
+  .again {
+    font-size: 30px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .rock img,
+  .paper img,
+  .scissors img {
+    width: 60px;
+  }
+  #rockText,
+  #paperText,
+  #scissorsText {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+
+  .robotText {
+    font-size: 20px;
+  }
 }
