@@ -10,11 +10,39 @@ document.getElementById("rockText").innerHTML = "";
 document.getElementById("paperText").innerHTML = "";
 document.getElementById("scissorsText").innerHTML = "";""
 //===============================================
+function computerloop(){
+  setTimeout(() => {
+    document.getElementById("robotChoice").innerHTML = "Rock";
 
+  }, 400);
+  setTimeout(() => {
+    document.getElementById("robotChoice").innerHTML = "Paper";
+
+  }, 500);
+  setTimeout(() => {
+    document.getElementById("robotChoice").innerHTML = "Scissor";
+
+  }, 600);
+  setTimeout(() => {
+    document.getElementById("robotChoice").innerHTML = "Rock";
+
+  }, 700);
+  setTimeout(() => {
+    document.getElementById("robotChoice").innerHTML = "Paper";
+
+  }, 800);
+  setTimeout(() => {
+    document.getElementById("robotChoice").innerHTML = "Scissor";
+
+  }, 900);
+}
 function rock() {
+
+if (robotWin < 3 && personWin < 3) {
+    
   document.getElementById("result").innerHTML = "";
   document.getElementById("robotChoice").innerHTML = "";
-if (robotWin < 3 && personWin < 3) {
+  computerloop()
   setTimeout(game("Rock"),5000);
   document.getElementById("rockText").innerHTML = "Rock";
   document.getElementById("paperText").innerHTML = "";
@@ -30,9 +58,12 @@ if (robotWin < 3 && personWin < 3) {
 }
 
 function paper() {
+
+if (robotWin < 3 && personWin < 3){
+    
   document.getElementById("result").innerHTML = "";
   document.getElementById("robotChoice").innerHTML = "";
-if (robotWin < 3 && personWin < 3){
+  computerloop()
   game("Paper")
   document.getElementById("paperText").innerHTML = "Paper";
   document.getElementById("rockText").innerHTML = "";
@@ -47,9 +78,13 @@ if (robotWin < 3 && personWin < 3){
 }
 }
 function scissors() {
+ 
+
+
+if (robotWin < 3 && personWin < 3){
   document.getElementById("result").innerHTML = "";
   document.getElementById("robotChoice").innerHTML = "";
-if (robotWin < 3 && personWin < 3){
+  computerloop()
   game("Scissors")
   document.getElementById("scissorsText").innerHTML = "Scissors";
   document.getElementById("rockText").innerHTML = "";
@@ -95,7 +130,7 @@ function game(person){
  robot = robocop()
  document.getElementById("robotChoice").innerHTML = robot;
 
-}, 2000);
+}, 1000);
 
 setTimeout(() => {
 if (person == robot) {
@@ -123,7 +158,7 @@ if (robotWin > 2 || personWin > 2){
   document.getElementById("buttonsss").style.display = "flex";
 }
 document.getElementById("result").innerHTML = message;
-}, 2500);
+}, 1500);
 
 }
 //===============================================
