@@ -176,8 +176,7 @@ h2 {
   .weapons {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 3rem;
+    justify-content: space-around;
   }
   .rock img,
   .paper img,
