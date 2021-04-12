@@ -182,7 +182,7 @@ h2 {
           filter: drop-shadow(0 0 3rem white);
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 375px) {
   h1 {
     font-size: 16px;
   }
