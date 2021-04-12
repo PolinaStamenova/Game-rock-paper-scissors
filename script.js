@@ -76,7 +76,7 @@ if (robotWin < 3 && personWin < 3){
 function robocop(){
   
   number = Math.floor(Math.random() * 3);
-  
+ 
   switch (number) {
   case 0:
     return "Rock"
@@ -91,17 +91,17 @@ function robocop(){
   default:
     break;
 }
-
-
 }
+
 
 
 
 //===============================================
 
 let message;
+
 function game(person){
- 
+  setTimeout(function() {
  robot = robocop()
  
 if (person == robot) {
@@ -132,7 +132,7 @@ else{
   document.getElementById("robotChoice").innerHTML = robot;
   document.getElementById("result").innerHTML = message;
 }
-
+  }, 2000);
 
 }
 //===============================================
