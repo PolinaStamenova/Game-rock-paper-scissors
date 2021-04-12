@@ -11,12 +11,11 @@ document.getElementById("paperText").innerHTML = "";
 document.getElementById("scissorsText").innerHTML = "";""
 //===============================================
 
-
-//===============================================
 function rock() {
-
+  document.getElementById("result").innerHTML = "";
+  document.getElementById("robotChoice").innerHTML = "";
 if (robotWin < 3 && personWin < 3) {
-  game("Rock")
+  setTimeout(game("Rock"),5000);
   document.getElementById("rockText").innerHTML = "Rock";
   document.getElementById("paperText").innerHTML = "";
   document.getElementById("scissorsText").innerHTML = "";
@@ -31,7 +30,8 @@ if (robotWin < 3 && personWin < 3) {
 }
 
 function paper() {
-
+  document.getElementById("result").innerHTML = "";
+  document.getElementById("robotChoice").innerHTML = "";
 if (robotWin < 3 && personWin < 3){
   game("Paper")
   document.getElementById("paperText").innerHTML = "Paper";
@@ -47,7 +47,8 @@ if (robotWin < 3 && personWin < 3){
 }
 }
 function scissors() {
- 
+  document.getElementById("result").innerHTML = "";
+  document.getElementById("robotChoice").innerHTML = "";
 if (robotWin < 3 && personWin < 3){
   game("Scissors")
   document.getElementById("scissorsText").innerHTML = "Scissors";
@@ -60,19 +61,11 @@ if (robotWin < 3 && personWin < 3){
   document.getElementById("rockopacity").classList.remove("boxshadow")
   document.getElementById("paperopacity").classList.remove("boxshadow")
   document.getElementById("scissorsopacity").classList.add("boxshadow")
+  
 }
 
 }
 //===============================================
-
-// var delay;
-
-// function delayFunction() {
-//   delay = setTimeout(robocop(), 5000);
-// }
-
-
-
 function robocop(){
   
   number = Math.floor(Math.random() * 3);
@@ -92,18 +85,19 @@ function robocop(){
     break;
 }
 }
-
-
-
-
 //===============================================
 
 let message;
 
 function game(person){
-  setTimeout(function() {
+  setTimeout(() => {
+    
  robot = robocop()
- 
+ document.getElementById("robotChoice").innerHTML = robot;
+
+}, 2000);
+
+setTimeout(() => {
 if (person == robot) {
   message = "No one win!";
 }
@@ -111,13 +105,13 @@ else if ((person.length == 4 && robot.length == 5) ||
          (person.length == 5 && robot.length == 8) ||
          (person.length == 8 && robot.length == 4)) {
   message = "Robot win!" ,  robotWin += 1;
-  document.getElementById('robotScore').innerHTML = + robotWin;
+  document.getElementById('robotScore').innerHTML =  robotWin;
 }
 else if ((person.length == 4 && robot.length == 8) ||
          (person.length == 5 && robot.length == 4) ||
          (person.length == 8 && robot.length == 5)) {
   message = "You win!" ,  personWin += 1;
-  document.getElementById('personScore').innerHTML = + personWin;
+  document.getElementById('personScore').innerHTML =  personWin;
 }
 else {
   message = "Something get wrong! Please try again!"
@@ -128,16 +122,11 @@ if (robotWin > 2 || personWin > 2){
   document.getElementById("palyAgain").innerHTML = "Do you want to play again?";
   document.getElementById("buttonsss").style.display = "flex";
 }
-else{
-  document.getElementById("robotChoice").innerHTML = robot;
-  document.getElementById("result").innerHTML = message;
-}
-  }, 2000);
+document.getElementById("result").innerHTML = message;
+}, 2500);
 
 }
 //===============================================
-
-
  function newGame() {
     personWin = 0;
     robotWin = 0;
@@ -151,12 +140,13 @@ else{
     document.getElementById("buttonsss").style.display = "none";
     document.getElementById('robotScore').innerHTML = + robotWin;
     document.getElementById('personScore').innerHTML = + personWin;
-    document.getElementById("rockopacity").style.opacity = "1";
-    document.getElementById("paperopacity").style.opacity = "1";
-    document.getElementById("scissorsopacity").style.opacity = "1";
     document.getElementById("rockopacity").style.opacity = "0.5";
     document.getElementById("paperopacity").style.opacity = "0.5";
     document.getElementById("scissorsopacity").style.opacity = "0.5";
+    document.getElementById("rockopacity").classList.remove("boxshadow")
+  document.getElementById("paperopacity").classList.remove("boxshadow")
+  document.getElementById("scissorsopacity").classList.remove("boxshadow")
+    
 
 }
 
