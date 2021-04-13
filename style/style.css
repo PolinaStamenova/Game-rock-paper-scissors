@@ -8,9 +8,22 @@ body {
   position: relative;
 }
 
-#cover {
+#blocksystem {
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 999;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
+#cover {
+  position: absolute;
+  z-index: 998;
   top: 0;
   bottom: 0;
   left: 0;
@@ -182,7 +195,7 @@ h2 {
           filter: drop-shadow(0 0 3rem white);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   h1 {
     font-size: 16px;
   }
@@ -206,9 +219,6 @@ h2 {
   }
   .again {
     font-size: 30px;
-  }
-  #buttonsss {
-    gap: 2rem;
   }
   .title {
     font-size: 20px;

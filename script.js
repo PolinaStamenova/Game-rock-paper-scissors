@@ -37,9 +37,9 @@ function computerloop(){
   }, 900);
 }
 function rock() {
-
+  
 if (robotWin < 3 && personWin < 3) {
-    
+  
   document.getElementById("result").innerHTML = "";
   document.getElementById("robotChoice").innerHTML = "";
   computerloop()
@@ -53,7 +53,7 @@ if (robotWin < 3 && personWin < 3) {
   document.getElementById("rockopacity").classList.add("boxshadow")
   document.getElementById("paperopacity").classList.remove("boxshadow")
   document.getElementById("scissorsopacity").classList.remove("boxshadow")
-
+  
 }
 }
 
@@ -135,24 +135,29 @@ function game(person){
 setTimeout(() => {
 if (person == robot) {
   message = "No one win!";
+  document.getElementById('blocksystem').style.display='none';
 }
 else if ((person.length == 4 && robot.length == 5) ||
          (person.length == 5 && robot.length == 8) ||
          (person.length == 8 && robot.length == 4)) {
   message = "Robot win!" ,  robotWin += 1;
   document.getElementById('robotScore').innerHTML =  robotWin;
+  document.getElementById('blocksystem').style.display='none';
 }
 else if ((person.length == 4 && robot.length == 8) ||
          (person.length == 5 && robot.length == 4) ||
          (person.length == 8 && robot.length == 5)) {
   message = "You win!" ,  personWin += 1;
   document.getElementById('personScore').innerHTML =  personWin;
+  document.getElementById('blocksystem').style.display='none';
 }
 else {
   message = "Something get wrong! Please try again!"
+  document.getElementById('blocksystem').style.display='none';
 }
 
 if (robotWin > 2 || personWin > 2){
+  document.getElementById('blocksystem').style.display='none';
   document.getElementById("result").innerHTML = "The game is over!" + " " + message;
   document.getElementById("palyAgain").innerHTML = "Do you want to play again?";
   document.getElementById("buttonsss").style.display = "flex";
