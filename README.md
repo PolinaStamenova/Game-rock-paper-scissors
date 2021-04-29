@@ -4,7 +4,7 @@
 
 > One paragraph statement about the project.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./papaer-rock-scissors.JPG)
 
 Additional description about the project and its features.
 
@@ -21,13 +21,13 @@ Additional description about the project and its features.
 To get a local copy up and running follow these simple example steps.
 ## Live Demo
 
-[Live Demo Link](https://garciajordy.github.io/NewsWeek-Project/)
+[Live Demo Link](https://polinastamenova.github.io/Game-rock-paper-scissors/)
 
 ## Instructions
 To get a local copy up and running follow these simple example steps.
 
 ### Setup
-- Clone in the terminal or download this entire [GitHub Repo](https://github.com/garciajordy/NewsWeek-Project) and go to the index.html file.
+- Clone in the terminal or download this entire [GitHub Repo](https://polinastamenova.github.io/Game-rock-paper-scissors/) and go to the index.html file.
 
 ### Install
 - Set up liveserver as an extension in your VS Code.
@@ -40,10 +40,10 @@ To get a local copy up and running follow these simple example steps.
 ## Authors
 
 
-👤 **Jordy Garcia**
+👤 **Polina Stamenova**
 
-- GitHub: [@githubhandle](https://github.com/garciajordy)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jordy-garcia-675849206/)
+- GitHub: [@githubhandle](https://github.com/PolinaStamenova)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/polina-stamenova-a60766112/)
 
 👤 **Author2**
 
